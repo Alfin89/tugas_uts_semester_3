@@ -23,9 +23,9 @@ from aboutapp import views
 
 urlpatterns = [
     path('', include('homeapp.urls')),
-    path('productapp/templates/product.html', include('productapp.urls')),
-    path('kategoriapp/templates/kategori.html',include('kategoriapp.urls')),
-    path('aboutapp/templates/about.html', include('aboutapp.urls')),
+    path('productapp/', include('productapp.urls')),
+    path('kategoriapp/',include('kategoriapp.urls')),
+    path('aboutapp/', include('aboutapp.urls')),
     path('admin/', admin.site.urls),
     # homeapp/templates/index.html
 ]
